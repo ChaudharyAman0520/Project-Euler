@@ -5,6 +5,7 @@
       "#include <iostream>",
       "#include <chrono>",
       "#include <iomanip>",
+      "#define int long long",
       "",
       "// ANSI color codes",
       "#define RESET   \"\\u001b[0m\"",
@@ -16,7 +17,7 @@
       "using namespace std;",
       "using namespace std::chrono;",
       "",
-      "int main() {",
+      "main() {",
       "    cout << GREEN << BOLD << \"\\n========== Program Start ==========\" << RESET << \"\\n\";",
       "",
       "    auto start = high_resolution_clock::now();",
@@ -38,7 +39,6 @@
       "    cout << YELLOW << \"   » \" << fixed << setprecision(6) << sec << \" s\" << RESET << \"\\n\";",
       "    cout << GREEN << \"====================================\\n\" << RESET;",
       "",
-      "    return 0;",
       "}"
     ],
     "description": "C++ main function with timer and colored output in all time units"
